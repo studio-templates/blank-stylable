@@ -22,26 +22,26 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@stylable/core": "^4.13.0",
-    "@stylable/runtime": "^4.13.0",
-    "@stylable/webpack-plugin": "^4.13.0",
+    "@stylable/core": "^4.13.1",
+    "@stylable/runtime": "^4.13.1",
+    "@stylable/webpack-plugin": "^4.13.1",
     "@types/react": "^17.0.43",
     "@types/react-dom": "^17.0.14",
-    "@typescript-eslint/eslint-plugin": "^5.19.0",
-    "@typescript-eslint/parser": "^5.19.0",
+    "@typescript-eslint/eslint-plugin": "^5.23.0",
+    "@typescript-eslint/parser": "^5.23.0",
     "@wixc3/react-board": "^1.1.1",
-    "eslint": "^8.13.0",
+    "eslint": "^8.15.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-react": "^7.29.4",
-    "eslint-plugin-react-hooks": "^4.4.0",
-    "eslint-plugin-stylable": "^4.13.0",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "eslint-plugin-stylable": "^4.13.1",
     "html-webpack-plugin": "^5.5.0",
     "rimraf": "^3.0.2",
     "serve": "^13.0.2",
-    "ts-loader": "^9.2.8",
-    "typescript": "^4.6.3",
-    "webpack": "^5.72.0",
+    "ts-loader": "^9.3.0",
+    "typescript": "^4.6.4",
+    "webpack": "^5.72.1",
     "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.8.1"
+    "webpack-dev-server": "^4.9.0"
   }
 }
