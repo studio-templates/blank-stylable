@@ -1,3 +1,4 @@
 dist
-tsconfig.json
+**/.git
+**/node_modules
 *.st.css
