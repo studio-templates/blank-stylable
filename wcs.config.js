@@ -8,7 +8,7 @@ module.exports = {
         /* This path is required to create new components through WCS. */
         componentsPath: 'src',
         /* This path is only required when using custom templates. */
-        templatesPath: 'src/wcs-component-templates',
+        templatesPath: 'src/_wcs/component-templates',
     },
 
     /**
@@ -17,8 +17,8 @@ module.exports = {
      */
 
     componentsDiscovery: {
-        include: ['src/**'],
-        exclude: ['src/wcs-component-templates/**'],
+        include: ['src/components**'],
+        exclude: ['src/_wcs/component-templates/**'],
     },
 
     /**
@@ -26,7 +26,7 @@ module.exports = {
      * Refer to https://component-studio.wixanswers.com/en/article/kb14533 for more information.
      */
 
-    boardGlobalSetup: './src/boards-global-setup.ts',
+    boardGlobalSetup: './src/_wcs/boards-global-setup.ts',
 
     /**
      * Configures scripts for project users to run from WCS (triggerable and on demand).
@@ -40,6 +40,15 @@ module.exports = {
             command: 'npm i',
             trigger: ['checkout', 'pull', 'setup'],
         },
+    },
+
+    /**
+     * Configures the limit of rended instances for a single component onstage.
+     * Refer to https://component-studio.wixanswers.com/en/aarticle/configuring-maximum-rendered-elements for more information.
+     */
+
+    safeRender: {
+        maxInstancesPerComponent: 1000,
     },
 
     /**
@@ -65,13 +74,6 @@ module.exports = {
      */
 
     //   boardExtensions: [".board.ts", ".board.tsx", ".custom.tsx"],
-
-    /**
-     * Default directory for new boards, relative to the project root.
-     * Refer to https://component-studio.wixanswers.com/kb/en/article/kb22014 for more information.
-     */
-
-    //   boardsPath: "src/components",
 
     /**
      * Adds Sass Support to Compilations
@@ -109,8 +111,7 @@ module.exports = {
      * Configures how SVG assets load in WCS.
      * Refer to https://component-studio.wixanswers.com/en/article/kb38231 for more information.
      */
-
-    //   svgLoader: "both",
+    svgLoader: 'both',
 
     /**
      * Configures file-naming convention for new component creation.
@@ -121,11 +122,11 @@ module.exports = {
     //   fileNamingConvention: "pascal-case",
 
     /**
-     * Configures maximum rendered elements.
+     * Configures maximum rendered elements (safe mode).
      * Refer to https://component-studio.wixanswers.com/en/article/kb34628 for more information.
      */
 
-    //   safeRender: {
+    //   safeMode: {
     //     maxInstancesPerComponent: 250,
     //   },
 

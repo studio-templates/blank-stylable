@@ -1,9 +1,9 @@
 import { st, classes } from './new-component.st.css';
 
-interface NewComponentProps {
+export interface NewComponentProps {
     className?: string;
 }
 
-export const NewComponent: React.FC<NewComponentProps> = ({ className }) => {
+export const NewComponent = ({ className }: NewComponentProps) => {
     return <div className={st(classes.root, className)}>NewComponent</div>;
 };
