@@ -10,6 +10,9 @@
     "plugin:stylable/recommended",
     "prettier"
   ],
+  "parserOptions": {
+    "sourceType": "module"
+  },
   "plugins": ["react-hooks"],
   "ignorePatterns": ["node_modules", "dist"],
   "settings": {
